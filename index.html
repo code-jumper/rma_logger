@@ -5,6 +5,22 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <script src="main.js"></script>
+        <header></header>
+        <h1>RMA List</h1>
+        <div id="newRMAContainer" class="container">
+            <form id="newRMAForm">
+                <label for="customer">Customer:</label><br>
+                <input type="text" id="customer" name="customer"><br>
+                <label for="product">Product:</label><br>
+                <input type="text" id="product" name="product"><br>
+                <label for="issue">Issue:</label><br>
+                <input type="text" id="issue" name="issue"><br>
+            </form>
+            <button id="addRMA">Add RMA</button>
+        </div>
+        <div id="currentRMAsContainer" class="container">
+
+        </div>
+        <script src="main.js" type="module"></script>
     </body>
 </html>
