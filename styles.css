@@ -1,0 +1,14 @@
+body {
+    color: black;
+}
+
+.addedRMA {
+    display: grid;
+    border: solid;
+    margin: 2px;
+    padding: 2px;
+}
+
+#currentRMAsContainer {
+    display: flex;
+}
