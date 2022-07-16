@@ -17,6 +17,17 @@ addRMAButton.addEventListener('click', function(){
         newRMAForm[1].value, 
         newRMAForm[2].value);
     array.push(nextRMA);
+    let addedContainer = document.createElement('div');
+    let deleteRMAButton = document.createElement('button');
+    deleteRMAButton.innerText = 'Delete RMA';
+    deleteRMAButton.addEventListener('click', function(){
+        ///Delete an RMA by clicking on it
+        ///Deactive deletion by clicking button again
+        ///Must implement removal of RMA in the array, too
+        let index = array.indexOf(nextRMA);
+        array.splice(index, 1);
+        currentRMAsContainer.removeChild(addedContainer);
+    })
     let addedRMA = document.createElement('form');
     addedRMA.setAttribute('class', 'addedRMA');
     let customerLabel = document.createElement('label');
@@ -40,7 +51,9 @@ addRMAButton.addEventListener('click', function(){
     issue.name = 'issue';
     issue.value = newRMAForm[2].value;
     addedRMA.append(issue);
-    currentRMAsContainer.append(addedRMA);
+    addedContainer.append(addedRMA);
+    addedContainer.append(deleteRMAButton);
+    currentRMAsContainer.append(addedContainer);
     console.log(array);
 });
 let i = 0;
