@@ -1,3 +1,8 @@
+* {
+    margin: auto;
+    padding: auto;
+}
+
 body {
     color: black;
     background-color: white;
@@ -6,10 +11,45 @@ body {
 .addedRMA {
     display: grid;
     border: solid;
-    margin: 2px;
+    border-color: blue;
     padding: 2px;
+    justify-items: end;
+    position: relative;
 }
+
+.checkDiv {
+    /*Only thing that seems to work to align left is 'margin-left'...*/
+    /* display: flex;
+    justify-items: start; */
+    margin-left: 0.1rem;
+}
+
+#newRMAContainer {
+    border: solid;
+    border-color: green;
+    display: grid;
+    justify-items: start;
+}
+
+
+/* Not working...
+#newRMAForm {
+    border: solid;
+    justify-items: start;
+} */
 
 #currentRMAsContainer {
     display: flex;
 }
+
+
+/*None of these are working*/
+
+/* #addedContainer {
+    display: grid;
+    justify-items: start;
+    min-height: 40px;
+    max-height: 90px;
+    min-width: 20px;
+    max-width: 110px;
+} */
