@@ -29,6 +29,7 @@ body {
     border-color: green;
     display: grid;
     justify-items: start;
+    margin: 2em;
 }
 
 
@@ -53,3 +54,15 @@ body {
     min-width: 20px;
     max-width: 110px;
 } */
+
+@media screen and (max-width: 900px) {
+    #currentRMAsContainer {
+        display: grid;
+    }
+
+    #newRMAContainer {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+}
