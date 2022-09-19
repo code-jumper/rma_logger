@@ -166,3 +166,5 @@ updateRMAsButton.addEventListener('click', function(){
         }
     }
 });
+
+///Add functionality : add dates (start date, etc.) and upon completion, have a timer start and on countdown remove that rma

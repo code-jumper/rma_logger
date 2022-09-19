@@ -26,7 +26,7 @@ body {
 
 #newRMAContainer {
     border: solid;
-    border-color: green;
+    color: rgb(148, 216, 148);
     display: grid;
     justify-items: start;
     margin: 2em;
