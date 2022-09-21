@@ -3,6 +3,10 @@
     padding: auto;
 }
 
+:root {
+    --background-color: rgb(148, 216, 148);
+}
+
 body {
     color: black;
     background-color: white;
@@ -11,7 +15,7 @@ body {
 .addedRMA {
     display: grid;
     border: solid;
-    border-color: blue;
+    background-color: var(--background-color);
     padding: 2px;
     justify-items: end;
     position: relative;
@@ -26,7 +30,7 @@ body {
 
 #newRMAContainer {
     border: solid;
-    color: rgb(148, 216, 148);
+    background-color: var(--background-color);
     display: grid;
     justify-items: start;
     margin: 2em;
